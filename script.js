@@ -76,7 +76,6 @@ const ANNIVERSARY_CONFIG = {
         { emoji: '✈️', title: 'Travel Together', description: 'Exploring the world, one sunset at a time, with you by my side.' },
         { emoji: '🏠', title: 'Our First Home', description: 'A place that\'s truly ours, where we build our story together.' },
         { emoji: '🚙', title: 'Wrangler Road Trips', description: 'More adventures in the Wrangler, windows down, music up, us.' },
-        { emoji: '💍', title: 'Forever Promises', description: 'Getting down on one knee and asking you the biggest question of my life.' },
         { emoji: '👨‍👩‍👧‍👦', title: 'Growing Old Together', description: 'Still holding hands at 80, still laughing at inside jokes, still in love.' },
         { emoji: '🌅', title: 'Every Sunset', description: 'Watching sunsets together, no more screens, no more distance.' },
     ],
