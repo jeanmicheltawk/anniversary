@@ -186,7 +186,10 @@ In `script.js`, modify the audio source:
 
 ```html
 <audio id="bgMusic" loop preload="auto">
-  <source src="https://your-music-url.mp3" type="audio/mpeg" />
+  <source
+    src="https://www.letras.com/monolink/light-up-my-dark/"
+    type="audio/mpeg"
+  />
 </audio>
 ```
 
@@ -469,4 +472,4 @@ Fast loading, even on slow connections!
 _Happy Anniversary! May this website capture just a fraction of the love you share._
 
 For any questions or custom features, feel free to modify the code - it's yours to make perfect!
-"# anniversary" 
+"# anniversary"
