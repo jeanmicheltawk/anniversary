@@ -186,10 +186,7 @@ In `script.js`, modify the audio source:
 
 ```html
 <audio id="bgMusic" loop preload="auto">
-  <source
-    src="https://www.letras.com/monolink/light-up-my-dark/"
-    type="audio/mpeg"
-  />
+  <source src="https://your-music-url.mp3" type="audio/mpeg" />
 </audio>
 ```
 

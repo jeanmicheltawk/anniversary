@@ -81,7 +81,7 @@ const ANNIVERSARY_CONFIG = {
     ],
 
     // Secret password - CHANGE THIS TO YOUR SECRET
-    secretPassword: 'wine opener',
+    secretPassword: 'wineopener',
     secretMessage: '💕 You know what my favorite memory is? The moment I first saw you at the party. I didn\'t know it then, but my entire life just changed. Every moment since has been a gift. Every call, every laugh, every sunset we\'ve shared – they\'re all engraved on my heart. I can\'t wait to close the distance and hold you forever. I love you more than words could ever say. Happy anniversary, my love. You are my home. 💕',
 };
 
