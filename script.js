@@ -30,12 +30,12 @@ const ANNIVERSARY_CONFIG = {
         {
             date: 'May 2026',
             title: 'Paris Trip',
-            description: 'Walking through the streets of Paris together. Every sunset was ours, every moment was magic.'
+            description: 'Walking through the streets of Paris together.Every moment was magic.'
         },
         {
             date: 'May 2026',
             title: 'Bavaria',
-            description: 'Under the stars in Bavaria, camping in the Wrangler. Simple moments, infinite love.'
+            description: 'Under the stars in Bavaria, Hiking , dancing , drinking. Simple moments, infinite love.'
         },
         {
             date: 'June 8, 2026',
