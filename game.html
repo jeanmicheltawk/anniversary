@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anniversary Game | JM & Yara</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="starsCanvas"></canvas>
+
+    <nav class="navbar game-navbar">
+      <div class="nav-content">
+        <a href="index.html" class="nav-back-link">← Back to Our Story</a>
+        <div class="nav-logo">🎮 Anniversary Game</div>
+      </div>
+    </nav>
+
+    <main class="game-page">
+      <!-- Welcome -->
+      <section class="game-screen active" id="welcomeScreen">
+        <div class="game-card">
+          <div class="game-emoji">💕</div>
+          <h1>1 Year Anniversary Game</h1>
+          <p class="game-intro">
+            How well do you know us? Answer questions about me, you, and our
+            love story. Get them all right to unlock a very special surprise…
+          </p>
+          <button class="cta-button" id="startGameBtn">
+            <span>Start the Game</span>
+            <span class="button-icon">✨</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Quiz -->
+      <section class="game-screen" id="quizScreen">
+        <div class="game-card game-card-wide">
+          <div class="game-progress">
+            <div class="game-progress-bar" id="progressBar"></div>
+          </div>
+          <p class="game-category" id="questionCategory"></p>
+          <h2 class="game-question" id="questionText"></h2>
+          <div class="game-options" id="optionsContainer"></div>
+          <p class="game-feedback hidden" id="questionFeedback"></p>
+          <button class="cta-button game-next-btn hidden" id="nextQuestionBtn">
+            <span>Next Question</span>
+            <span class="button-icon">→</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Success -->
+      <section class="game-screen" id="successScreen">
+        <div class="game-card game-card-reveal">
+          <div class="game-emoji">🎁</div>
+          <h1>You Did It!</h1>
+          <p class="game-intro">
+            You know our story by heart. Here's where your gift is hiding…
+          </p>
+          <div class="gift-reveal">
+            <p class="gift-label">Your gift is located:</p>
+            <p class="gift-location">Under her bed 🛏️💝</p>
+          </div>
+          <a href="index.html" class="cta-button game-home-btn">
+            <span>Back to Our Story</span>
+            <span class="button-icon">❤️</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Retry -->
+      <section class="game-screen" id="retryScreen">
+        <div class="game-card">
+          <div class="game-emoji">💭</div>
+          <h1>Almost There!</h1>
+          <p class="game-intro" id="retryMessage"></p>
+          <button class="cta-button" id="retryGameBtn">
+            <span>Try Again</span>
+            <span class="button-icon">🔄</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <div id="confettiContainer"></div>
+
+    <audio id="clickSound" preload="auto">
+      <source
+        src="https://assets.mixkit.co/active_storage/sfx/2570/2570-preview.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <audio id="successSound" preload="auto">
+      <source
+        src="https://assets.mixkit.co/active_storage/sfx/1435/1435-preview.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script src="game.js"></script>
+  </body>
+</html>
