@@ -1889,6 +1889,33 @@ section {
     background-clip: text;
 }
 
+.voucher-reveal {
+    border-color: rgba(251, 191, 36, 0.4);
+}
+
+.voucher-amount {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: var(--spacing-sm) 0;
+    background: linear-gradient(135deg, var(--accent-gold), #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hermes-btn {
+    display: inline-flex;
+    margin: var(--spacing-md) auto 0;
+    text-decoration: none;
+    justify-content: center;
+    background: linear-gradient(135deg, #c9a227, #8b6914);
+    box-shadow: 0 10px 30px rgba(201, 162, 39, 0.35);
+}
+
+.hermes-btn:hover {
+    box-shadow: 0 15px 40px rgba(201, 162, 39, 0.5);
+}
+
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.02); }

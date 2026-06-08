@@ -48,8 +48,8 @@ const QUIZ_QUESTIONS = [
     {
         category: 'About Her 💕',
         question: 'What about you makes even bad days feel like the best days?',
-        options: ['Your smile', 'Your laugh', 'Your kindness', 'Your patience'],
-        correct: 0,
+        options: ['Your smile', 'Your laugh', 'Your kindness', 'Your patience','All of the above'],
+        correct: 4,
     },
     {
         category: 'About Us 💑',
@@ -60,7 +60,7 @@ const QUIZ_QUESTIONS = [
     {
         category: 'About Us 💑',
         question: 'What you like more about me?',
-        options: ['My smile', 'My laugh', 'My kindness', 'My patience', 'My dreams'],
+        options: ['My smile', 'My laugh', 'My kindness', 'My patience', 'My dreams','All of the above'],
         correct: 4,
     },
 ];
@@ -72,11 +72,13 @@ let selectedOption = null;
 const DOM = {
     welcomeScreen: document.getElementById('welcomeScreen'),
     quizScreen: document.getElementById('quizScreen'),
-    successScreen: document.getElementById('successScreen'),
+    voucherScreen: document.getElementById('voucherScreen'),
+    bedGiftScreen: document.getElementById('bedGiftScreen'),
     retryScreen: document.getElementById('retryScreen'),
     startGameBtn: document.getElementById('startGameBtn'),
     nextQuestionBtn: document.getElementById('nextQuestionBtn'),
     retryGameBtn: document.getElementById('retryGameBtn'),
+    hermesLink: document.getElementById('hermesLink'),
     progressBar: document.getElementById('progressBar'),
     questionCategory: document.getElementById('questionCategory'),
     questionText: document.getElementById('questionText'),
@@ -95,6 +97,7 @@ function setupEventListeners() {
     DOM.startGameBtn.addEventListener('click', startGame);
     DOM.nextQuestionBtn.addEventListener('click', goToNextQuestion);
     DOM.retryGameBtn.addEventListener('click', startGame);
+    DOM.hermesLink.addEventListener('click', revealBedGift);
 }
 
 function startGame() {
@@ -182,11 +185,19 @@ function showResults() {
     if (correctCount === QUIZ_QUESTIONS.length) {
         playSound('successSound');
         triggerConfetti();
-        showScreen('successScreen');
+        showScreen('voucherScreen');
     } else {
         DOM.retryMessage.textContent = `You got ${correctCount} out of ${QUIZ_QUESTIONS.length} right. Our story is worth knowing by heart — give it another try! 💕`;
         showScreen('retryScreen');
     }
+}
+
+function revealBedGift() {
+    playSound('successSound');
+    setTimeout(() => {
+        triggerConfetti();
+        showScreen('bedGiftScreen');
+    }, 600);
 }
 
 function playSound(soundId) {
